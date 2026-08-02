@@ -13,10 +13,13 @@ Hey there! At a festival we had 24 of these BRMesh flood lights in use. They are
 
 ![Back of the flood light](img/back.jpg)
 
-The back label reads:
+The back label reads (essentially):
 
-> ILC-BT-FL-T / BRmesh faretlo led/foco led 85-265V 50/60Hz  
-> LED Flood Light / LED Strahler / Projecteur LED
+> ILC-BT-FL-T
+>
+> APP: BRmesh
+> 
+> LED Flood Light / LED Strahler / Projecteur LED / faretto led / foco led 85-265V 50/60Hz  
 
 These things have a built-in Bluetooth mesh (Broadlink Fastcon / BRMesh) and can normally ONLY be controlled via the **brMesh app** on a phone. But we wanted to control them properly **via DMX** (ArtNet or sACN) from our lighting consoles.
 
@@ -107,7 +110,7 @@ For fewer lights, the refresh rate improves proportionally: with 6 lights you'd 
 
 ### Hardware
 - A Linux computer (tested: Ubuntu) with a **compatible Bluetooth card** (Intel-based cards like in the Beelink worked, mine specifically shows as `8087:0a2a Intel Corp. Bluetooth wireless interface`)
-- Possibly a **USB Bluetooth dongle** with BLE support if the internal card isn't compatible, e.g. the one ArcadeMachinist used is proven to have worked: `2550:8761 Realtek Bluetooth Radio`
+- If the internal card isn't compatible: A **USB Bluetooth dongle** with BLE support, e.g. the one ArcadeMachinist used is proven to work as well: `2550:8761 Realtek Bluetooth Radio`
 - **Line of sight** to the BRMesh flood lights (BLE range is limited; we used ~2.20 m height with line of sight to devices 1 and 24)
 
 ### Software
@@ -258,7 +261,7 @@ To run the bridge on startup, so that the beelink became a "standalone" device, 
 ### Step 7: Set up your lighting console to send artnet (not sacn) to the universe 
 
 Configure your lighting console / software as follows:
-- **ArtNet Universe**: the one configured in the INI (e.g. 512)
+- **ArtNet Universe**: the one configured in the INI (e.g. 512 resulted in **universe 3** for us)
 - **DMX start address**: 1
 - **Channel layout per light**: 3 channels (R, G, B), sequential
   - Light 1: channels 1–3
