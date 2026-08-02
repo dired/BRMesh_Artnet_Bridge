@@ -72,6 +72,8 @@ flowchart LR
 4. If RGB = (0,0,0): the light is turned off.
 5. This runs **as fast as possible** sequentially in the ring – not parallel (in lack of emitting such a bluetooth command), each light one by one.
 
+![Ring loop animation — 30s visualization of the ring poll with DMX events](img/ring_loop_animation.svg)
+
 ### ⚡ Maximum speed – **this is important!**
 
 <span style="color:orange; font-weight:bold;">
@@ -276,6 +278,7 @@ Configure your lighting console / software as follows:
 | `hack-ble-flags.patch` | BlueZ patch to fix BLE flag ordering (required, from Moody/brMeshMQTT) |
 | `img/front.jpg` | Front of the flood light (BLFL-LFFA) |
 | `img/back.jpg` | Back of the flood light with label |
+| `img/ring_loop_animation.svg` | Animated visualization of the ring poll loop with DMX events |
 
 ---
 
