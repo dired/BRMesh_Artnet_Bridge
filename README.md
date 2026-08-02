@@ -15,8 +15,8 @@ Hey there! At a festival we had 24 of these BRMesh flood lights in use. They are
 
 The back label reads:
 
-> ILC-BT-FL-T / BRmesh faretlo led/foco led 85-265V 50/60Hz  
 > LED Flood Light / LED Strahler / Projecteur LED
+> ILC-BT-FL-T / BRmesh faretto led/foco led 85-265V 50/60Hz  
 
 These things have a built-in Bluetooth mesh (Broadlink Fastcon / BRMesh) and can normally ONLY be controlled via the **brMesh app** on a phone. But we wanted to control them properly **via DMX** (ArtNet or sACN) from our lighting consoles.
 
