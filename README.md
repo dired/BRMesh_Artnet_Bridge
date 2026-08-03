@@ -124,7 +124,7 @@ For fewer lights, the refresh rate improves proportionally: with 6 lights you'd 
 - **brMesh app** on an Android phone (one-time setup for device configuration and mesh key extraction)
 - **ADB** (Android Debug Bridge) to extract the key from the phone
 
-> ℹ️ **Self-contained:** The BRMesh Fastcon BLE protocol implementation (reverse-engineered from brMeshMQTT) is included directly in `brmesh_artnet_bridge.py`. No external `brmesh/` module or MQTT broker needed. The `brmesh/` folder in this repo is the original gateway code kept for reference only.
+> ℹ️ **Self-contained:** The BRMesh Fastcon BLE protocol implementation (reverse-engineered from brMeshMQTT) is included directly in `brmesh_artnet_bridge.py`.
 
 ### Lighting console / software
 - An ArtNet-capable lighting console or software (e.g. **QLC+**, DMXControl, ChamSys, GrandMA, etc.)
